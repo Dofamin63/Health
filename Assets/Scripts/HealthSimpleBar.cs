@@ -2,6 +2,6 @@
 {
     protected override void UpdateHealth()
     {
-        healthSlider.value = targetHealth;
+        HealthSlider.value = TargetHealth;
     }
 }

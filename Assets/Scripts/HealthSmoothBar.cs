@@ -3,18 +3,18 @@ using UnityEngine;
 
 public class HealthSmoothBar : HealthBarBase
 {
-    [SerializeField] public float smoothSpeed;
+    [SerializeField] private float _smoothSpeed;
 
     protected override void UpdateHealth()
     {
-        StartCoroutine(SmoothUpdateHealth(targetHealth));
+        StartCoroutine(SmoothUpdateHealth(TargetHealth));
     }
 
     private IEnumerator SmoothUpdateHealth(float targetHealth)
     {
-        while (Mathf.Approximately(healthSlider.value, targetHealth) == false)
+        while (Mathf.Approximately(HealthSlider.value, targetHealth) == false)
         {
-            healthSlider.value = Mathf.MoveTowards(healthSlider.value, targetHealth, smoothSpeed * Time.deltaTime);
+            HealthSlider.value = Mathf.MoveTowards(HealthSlider.value, targetHealth, _smoothSpeed * Time.deltaTime);
             yield return null;
         }
     }

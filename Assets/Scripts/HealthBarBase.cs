@@ -5,12 +5,12 @@ using UnityEngine.UI;
 public abstract class HealthBarBase : MonoBehaviour
 {
     [SerializeField] private Health _health;
-    protected Slider healthSlider;
-    protected float targetHealth;
+    protected Slider HealthSlider;
+    protected float TargetHealth;
 
     private void Awake()
     {
-        healthSlider = GetComponent<Slider>();
+        HealthSlider = GetComponent<Slider>();
     }
 
     private void OnEnable()
@@ -25,7 +25,7 @@ public abstract class HealthBarBase : MonoBehaviour
 
     private void CalculateHealth(float currentHealth, float maxHealth)
     {
-        targetHealth = currentHealth / maxHealth;
+        TargetHealth = currentHealth / maxHealth;
         UpdateHealth();
     }
 

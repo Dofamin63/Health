@@ -917,8 +917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d892d267daaf14587219c61b09516b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 1921315018}
-  countHealth: 300
+  Health: {fileID: 1921315018}
+  CountHealth: 300
 --- !u!1 &586466406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,8 +1053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc2df79f57b75e41b2e0ea469c053b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 1921315018}
-  countHealth: 200
+  Health: {fileID: 1921315018}
+  CountHealth: 200
 --- !u!1 &629537091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: {fileID: 1921315018}
-  smoothSpeed: 0.5
+  _smoothSpeed: 1
 --- !u!1 &680920333
 GameObject:
   m_ObjectHideFlags: 0

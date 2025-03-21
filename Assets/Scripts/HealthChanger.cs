@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public abstract class HealthChanger : MonoBehaviour
 {
-    [SerializeField] protected Health health; 
-    [SerializeField] protected float countHealth;
+    [SerializeField] protected Health Health; 
+    [SerializeField] protected float CountHealth;
     private Button _button;
 
     private void Awake()
