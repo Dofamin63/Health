@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(TextMeshProUGUI))]
 public class HealthText : MonoBehaviour
 {
     [SerializeField] private Health _health;
@@ -9,6 +10,10 @@ public class HealthText : MonoBehaviour
     private void Awake()
     {
         _healthText = GetComponent<TextMeshProUGUI>();
+    }
+    
+    private void OnEnable()
+    {
         _health.OnHealthChanged += UpdateHealth;
     }
 

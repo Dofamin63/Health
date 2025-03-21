@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    private const float _minHealth = 0;
-
+    [SerializeField] private float _minHealth;
     [SerializeField] private float _maxHealth;
     private float _currentHealth;
 
