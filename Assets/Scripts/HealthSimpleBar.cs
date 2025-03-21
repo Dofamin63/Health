@@ -1,4 +1,4 @@
-﻿public class HealthSimpleBar : HealthBarView
+﻿public class HealthSimpleBar : HealthBarBase
 {
     protected override void UpdateHealth()
     {

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Slider))]
-public abstract class HealthBarView : MonoBehaviour
+public abstract class HealthBarBase : MonoBehaviour
 {
     [SerializeField] private Health _health;
     protected Slider healthSlider;

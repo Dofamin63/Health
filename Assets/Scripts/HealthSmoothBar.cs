@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class HealthSmoothBar : HealthBarView
+public class HealthSmoothBar : HealthBarBase
 {
     [SerializeField] public float smoothSpeed;
 
